@@ -3,7 +3,7 @@
    <the-header />
    <the-volume-button />
    <watch />
-    <category-items />
+  <category-items />
  </div>
 </template>
 

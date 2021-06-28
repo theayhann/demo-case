@@ -1,25 +1,23 @@
 <template>
   <div>
-    <div class="navbar navbar-expand-lg navbar-light w-100">
+    <div class="header">
+      <div class="header-left">
 
-        <h2 class="text-white">LOGO</h2>
+        <div>
+          <h2>LOGO</h2>
+        </div>
 
-        <button class="d-lg-none btn" data-toggle="collapse" data-target="#headerShow" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-align-justify"></i>
-        </button>
+        <div class="d-none d-md-block">
+          <div class="header-left__menu custom-border">
+            <div>
+              <h6>Menu 1</h6>
+            </div>
 
-      <div class="collapse navbar-collapse" id="headerShow">
-        <div class="navbar-nav navbar-nav-left custom-border mr-auto">
-          <div class="navbar-item">
-            <h6>Menu 1</h6>
-          </div>
+            <div>
+              <h6>Menu 2</h6>
+            </div>
 
-          <div class="navbar-item">
-            <h6>Menu 2</h6>
-          </div>
-
-          <div class="navbar-item">
-            <div class="btn-group  select-language">
+            <div>
               <h6 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TR <i class="fas fa-chevron-down"></i></h6>
               <div class="dropdown-menu custom-border">
                 <h6 class="dropdown-item">Ar</h6>
@@ -27,76 +25,90 @@
                 <h6 class="dropdown-item">Fr</h6>
               </div>
             </div>
-
-
           </div>
-
         </div>
-
-        <div class="navbar-nav navbar-nav-right custom-border">
-          <h6>Sign In</h6>
-        </div>
-
       </div>
 
+     <div class="d-none d-md-block">
+       <div class="header-right custom-border">
+         <h6>Sign In</h6>
+       </div>
+     </div>
+
+      <div class="d-md-none d-block">
+        <h2><i class="fas fa-bars text-white" @click="leftBar = !leftBar"></i></h2>
+      </div>
+    </div>
+
+    <div v-if="leftBar">
+      <the-left-bar />
     </div>
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      leftBar: false,
+    };
+  },
+  components: {
+    TheLeftBar: () => import('@/layouts/TheLeftBar.vue'),
+  },
+};
+</script>
 
 <style scoped>
-
-.navbar {
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   position: absolute;
-   padding: 50px 130px 0 250px;
+  padding: 50px 50px 0 50px;
 }
 
-.custom-border {
-  border: 2px solid;
-  border-top-color: #43A2B0;
-  border-bottom-color: #988BBE;
-  border-right-color: #81A1CB;
-  border-left-color: #81A1CB;
+
+.header-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
-.navbar-nav {
+.header-left__menu {
   background: rgba(255, 255, 255, 0.16);
   min-height: 50px;
+  min-width: 250px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   border-radius: 10px;
   margin-left: 50px;
   padding: 0 15px 0 15px;
+
 
   font-weight: bold;
   color: white;
   cursor: pointer;
 }
 
-.navbar-nav-left {
-  min-width: 300px;
-  justify-content: space-between;
-}
-
-@media screen and (max-width: 990px) {
-  .navbar {
-    padding: 50px;
-  }
-
-  .navbar-nav-left {
-    min-width: 200px;
-  }
-}
-
-.navbar-nav-right {
-  min-width: 120px;
-  justify-content: center;
-}
-
-.navbar-item:hover {
-  height: 40px;
+.header-right {
+  background: rgba(255, 255, 255, 0.16);
+  min-height: 50px;
+  min-width: 100px;
   display: flex;
+  justify-content: center;
   align-items: center;
+  border-radius: 10px;
+  margin-left: 50px;
+  padding: 0 15px 0 15px;
+
+
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
 }
 
 .dropdown-menu {
@@ -114,5 +126,14 @@
 
 .dropdown-item:hover {
   background: rgba(255, 255, 255, 0.16);
+}
+
+
+.custom-border {
+  border: 2px solid;
+  border-top-color: #43A2B0;
+  border-bottom-color: #988BBE;
+  border-right-color: #81A1CB;
+  border-left-color: #81A1CB;
 }
 </style>

@@ -1,15 +1,12 @@
 <template>
-  <div>
-    <div class="category-top"></div>
-    <div class="category text-white">
+ <div>
+   <div class="category-top"></div>
+   <div class="category">
+     <div>
+         <div id="carousel-example" class="carousel slide" data-ride="carousel">
+           <div class="carousel-inner d-flex justify-content-center row" role="listbox">
 
-      <!-- Top content -->
-      <div class="top-content">
-        <div class="container-fluid">
-          <div id="carousel-example" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner d-flex justify-content-center flex-row" role="listbox">
-
-              <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+             <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
                <div class="img-fluid mx-auto d-block">
                  <div class="item clearfix">
                    <div>
@@ -28,128 +25,124 @@
                    </div>
                  </div>
                </div>
-              </div>
+             </div>
 
-              <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="img-fluid mx-auto d-block">
-                  <div class="item clearfix">
-                    <div>
-                      <img class="item-picture" src="/assets/images/videos-pic.png" alt="videos">
-                    </div>
-                    <div class="item-text">
-                      <b>Vanguard</b>
-                      <small class="item-date">2018 . 1h 23m</small>
-                    </div>
-                    <div class="item-mouseover-bottom">
-                      <div>
-                        <button class="item-mouseover-buttons"><i class="far fa-heart"></i></button>
-                        <button class="item-mouseover-buttons item-mouseover-button-play"><i class="fab fa-google-play"></i></button>
-                        <button class="item-mouseover-buttons"><i class="fas fa-heart-broken"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+             <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+               <div class="img-fluid mx-auto d-block">
+                 <div class="item clearfix">
+                   <div>
+                     <img class="item-picture" src="/assets/images/videos-pic.png" alt="videos">
+                   </div>
+                   <div class="item-text">
+                     <b>Vanguard</b>
+                     <small class="item-date">2018 . 1h 23m</small>
+                   </div>
+                   <div class="item-mouseover-bottom">
+                     <div>
+                       <button class="item-mouseover-buttons"><i class="far fa-heart"></i></button>
+                       <button class="item-mouseover-buttons item-mouseover-button-play"><i class="fab fa-google-play"></i></button>
+                       <button class="item-mouseover-buttons"><i class="fas fa-heart-broken"></i></button>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
 
-              <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="img-fluid mx-auto d-block">
-                  <div class="item clearfix">
-                    <div>
-                      <img class="item-picture" src="/assets/images/videos-pic.png" alt="videos">
-                    </div>
-                    <div class="item-text">
-                      <b>Bad Times At The El Royale</b>
-                      <small class="item-date">2018 . 1h 23m</small>
-                    </div>
-                    <div class="item-mouseover-bottom">
-                      <div>
-                        <button class="item-mouseover-buttons"><i class="far fa-heart"></i></button>
-                        <button class="item-mouseover-buttons item-mouseover-button-play"><i class="fab fa-google-play"></i></button>
-                        <button class="item-mouseover-buttons"><i class="fas fa-heart-broken"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+             <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+               <div class="img-fluid mx-auto d-block">
+                 <div class="item clearfix">
+                   <div>
+                     <img class="item-picture" src="/assets/images/videos-pic.png" alt="videos">
+                   </div>
+                   <div class="item-text">
+                     <b>Bad Times At The El Royale</b>
+                     <small class="item-date">2018 . 1h 23m</small>
+                   </div>
+                   <div class="item-mouseover-bottom">
+                     <div>
+                       <button class="item-mouseover-buttons"><i class="far fa-heart"></i></button>
+                       <button class="item-mouseover-buttons item-mouseover-button-play"><i class="fab fa-google-play"></i></button>
+                       <button class="item-mouseover-buttons"><i class="fas fa-heart-broken"></i></button>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
 
-              <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="img-fluid mx-auto d-block">
-                  <div class="item clearfix">
-                    <div>
-                      <img class="item-picture" src="/assets/images/videos-pic.png" alt="videos">
-                    </div>
-                    <div class="item-text">
-                      <b>John Wick 3 Parabellum</b>
-                      <small class="item-date">2018 . 1h 23m</small>
-                    </div>
-                    <div class="item-mouseover-bottom">
-                      <div>
-                        <button class="item-mouseover-buttons"><i class="far fa-heart"></i></button>
-                        <button class="item-mouseover-buttons item-mouseover-button-play"><i class="fab fa-google-play"></i></button>
-                        <button class="item-mouseover-buttons"><i class="fas fa-heart-broken"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+             <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+               <div class="img-fluid mx-auto d-block">
+                 <div class="item clearfix">
+                   <div>
+                     <img class="item-picture" src="/assets/images/videos-pic.png" alt="videos">
+                   </div>
+                   <div class="item-text">
+                     <b>John Wick 3 Parabellum</b>
+                     <small class="item-date">2018 . 1h 23m</small>
+                   </div>
+                   <div class="item-mouseover-bottom">
+                     <div>
+                       <button class="item-mouseover-buttons"><i class="far fa-heart"></i></button>
+                       <button class="item-mouseover-buttons item-mouseover-button-play"><i class="fab fa-google-play"></i></button>
+                       <button class="item-mouseover-buttons"><i class="fas fa-heart-broken"></i></button>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
 
-              <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="img-fluid mx-auto d-block">
-                  <div class="item clearfix">
-                    <div>
-                      <img class="item-picture" src="/assets/images/videos-pic.png" alt="videos">
-                    </div>
-                    <div class="item-text">
-                      <b>John Wick 3 Parabellum</b>
-                      <small class="item-date">2018 . 1h 23m</small>
-                    </div>
-                    <div class="item-mouseover-bottom">
-                      <div>
-                        <button class="item-mouseover-buttons"><i class="far fa-heart"></i></button>
-                        <button class="item-mouseover-buttons item-mouseover-button-play"><i class="fab fa-google-play"></i></button>
-                        <button class="item-mouseover-buttons"><i class="fas fa-heart-broken"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+             <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+               <div class="img-fluid mx-auto d-block">
+                 <div class="item clearfix">
+                   <div>
+                     <img class="item-picture" src="/assets/images/videos-pic.png" alt="videos">
+                   </div>
+                   <div class="item-text">
+                     <b>John Wick 3 Parabellum</b>
+                     <small class="item-date">2018 . 1h 23m</small>
+                   </div>
+                   <div class="item-mouseover-bottom">
+                     <div>
+                       <button class="item-mouseover-buttons"><i class="far fa-heart"></i></button>
+                       <button class="item-mouseover-buttons item-mouseover-button-play"><i class="fab fa-google-play"></i></button>
+                       <button class="item-mouseover-buttons"><i class="fas fa-heart-broken"></i></button>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
 
-            </div>
+           </div>
 
-            <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+           <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+             <span class="sr-only">Next</span>
+           </a>
+         </div>
+       </div>
+   </div>
+ </div>
 </template>
 
-
 <style scoped>
-
 .category-top {
   position: absolute;
   width: 100%;
-  height: 100px;
-  top: 250px;
+  height: 92px;
+  top: 260px;
+
   background: linear-gradient(179.83deg, #1F1F1F 0.14%, rgba(34, 34, 34, 0.369792) 62.97%, rgba(34, 34, 34, 0) 99.84%);
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
 .category {
-  background-color: #1f1f1f;
-  bottom: 0;
-  min-height: 600px;
+  background-color: #1F1F1F;
   width: 100%;
-  padding: 10px 20px 10px 20px;
+  min-height: 59vh;
+  color: white;
 }
 
 .carousel-inner {
-  padding: 50px 0 50px 0;
+  padding: 50px 0 20px 40px;
 }
 
 
@@ -255,8 +248,6 @@
   background: rgba(0, 0, 0, 0.7);
 }
 
-
-
 @media (min-width: 768px) and (max-width: 991px) {
   /* Show 4th slide on md if col-md-4*/
   .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
@@ -267,42 +258,16 @@
     display: block;
     visibility: visible;
   }
-
-  .item-picture {
-    height: 95px;
-    width: 165px;
-  }
-
-  .item {
-    width: 167px;
-    height: 300px;
-    transition: 0.5s;
-    border-radius: 6px;
-  }
-
-
 }
 @media (min-width: 576px) and (max-width: 768px) {
   /* Show 3rd slide on sm if col-sm-6*/
   .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
-
+    position: absolute;
     top: 0;
     right: -50%;  /*change this with javascript in the future*/
     z-index: -1;
     display: block;
     visibility: visible;
-  }
-
-  .item-picture {
-    height: 95px;
-    width: 165px;
-  }
-
-  .item {
-    width: 167px;
-    height: 300px;
-    transition: 0.5s;
-    border-radius: 6px;
   }
 }
 @media (min-width: 576px) {
@@ -331,6 +296,7 @@
   }
   /* farthest right hidden item must be also positioned for animations */
   .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
@@ -375,7 +341,38 @@
     display: block;
     visibility: visible;
   }
-
-
+}
+/* LG */
+@media (min-width: 991px) {
+  /* show 4th item */
+  .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+    display: block;
+  }
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+    transition: none;
+  }
+  /* Show 5th slide on lg if col-lg-3 */
+  .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -25%;  /*change this with javascript in the future*/
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  /* left or forward direction */
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  /* right or prev direction //t - previous slide direction last item animation fix */
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
 }
 </style>
